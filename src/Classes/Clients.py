@@ -2,7 +2,7 @@
 class Client:
     number= 123
     def __init__(self,Name,Age,CPF,Born_data, Account_type):
-        self.name = Name
+        self.Name = Name
         self.Age = Age
         self.CPF = CPF
         self.Born_data = Born_data
@@ -11,12 +11,21 @@ class Client:
     
     # Funcionalidades da classe
     def Describe(self):
-        print(f"Name: {self.name}\nAge: {self.Age}\nBorn data: {self.Born_data}\nCPF: {self.CPF}\nAccount type: {self.Type}")
+        print(f"Name: {self.Name}\nAge: {self.Age}\nBorn data: {self.Born_data}\nCPF: {self.CPF}\nAccount type: {self.Type}")
     
     
 
     #@classmethod # funciona com variáveis globais da classe
     
-    # Standard is bronze, Silver type got some credit
+    # Standard is bronze
     # Gold got more credit and can open more than 1 Account
     # Black type is the best, huge amount of credit and better investment options
+
+class Client_Gold(Client):
+    def __init__(self, Gold_id):
+        self.Id = Gold_id
+
+class Client_Black(Client):
+    def __init__(self, Black_id):
+        self.Id = Black_id
+

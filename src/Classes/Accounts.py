@@ -1,21 +1,17 @@
 from src.Classes.Clients import Client
 
-class Bank_Account(Client):
+class Bank_Account():
 
-    def __init__(self, Balance,Limit, Account_Number, Credit, Transactions_Historic):
-        try:
-            self.User = Client.name
-            self.Balance = Balance
-            self.Limit = Limit
-            self.Acc_Number = Account_Number
-            self.Credit = Credit
-            self.Transactions = Transactions_Historic
-        except (ZeroDivisionError, TypeError):
-            print("Error Creating account\n")
-            pass
-        else:
-            print("Account Created")
+    def __init__(self,Client: Client, Balance: float,Limit: float, Account_Number: int, Credit: float):
+        self.Client_name = Client
+        self.Balance = Balance
+        self.Limit = Limit
+        self.Acc_Number = Account_Number
+        self.Credit = Credit
         
+    def Description(self):
+        print(f"User name: {self.Client_name.Name}\nBalance: {self.Balance}\nLimit: {self.Limit}\nAccount Number: {self.Acc_Number}\nCredit: {self.Credit}")
+
     def Withdraw(self,Value):
         if Value > 0:
             if self.Balance >= Value:
@@ -33,11 +29,16 @@ class Bank_Account(Client):
         else:
             print("Invalid Value")
     
-    def Balance(self):
-        return self.Balance
+    def Balance_check(self):
+        print("/*================*/\n")
+        print(f"Your Balance is {self.Balance}\n")
+        print("/*================*/\n")
+
     
-    def Transfer(self, Quantity, Sender_id, Receiver_id):
-        print("Transfer concluded")
+
+class Investment_Account(Bank_Account):
+    def __init__(self, ):
+        pass
 
     
     # @staticmethod

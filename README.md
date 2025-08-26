@@ -8,16 +8,19 @@ Funcionalidades
 - Realizar transação
 - Remover conta
 - Remover cliente
-- Analisar crédito
+- Depositar dinheiro
+- Sacar dinheiro
 
 
 Testes
 - Buscar cliente que não existe
 - Transação sem saldo
 - Solicitar crédito
-- 
 
 Resultados
 
 
 Atualizações futuras
+- Diferenciar Tipos de Clientes
+- Testes de validação de entradas (formatação de data de nascimento, cpf, id)
+- Gerador de ID

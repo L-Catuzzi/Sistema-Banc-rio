@@ -12,12 +12,11 @@ class Employer():
         self.Number = Employer_number
         self.Role = Role
 
-    def Promote_client(self,Client_id,Bank_Account):
-        if Func.find_client(Client_id):
-
+    def Promote_client(self,Client: Client, Type):
+        Client.Type = Type
 
     def Delete_account(self, Account_id):
-        
+        conta = Func.find_account(Account_id)
 
-    # def Promote_client(self, Promotion_type, client_id):
-    #  
+    def Delete_client(self, Client_id):
+        pass

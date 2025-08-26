@@ -10,9 +10,8 @@ class Client:
         
     
     # Funcionalidades da classe
-    def Describe(self):
-        print(f"Name: {self.Name}\nAge: {self.Age}\nBorn data: {self.Born_data}\nCPF: {self.CPF}\nAccount type: {self.Type}")
-    
+    def __str__(self):
+        return f"Name: {self.Name}\nAge: {self.Age}\nBorn data: {self.Born_data}\nCPF: {self.CPF}\nAccount type: {self.Type}"
     
 
     #@classmethod # funciona com variáveis globais da classe

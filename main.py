@@ -1,6 +1,6 @@
 from src.Classes.Accounts import Bank_Account
-from src.Classes.Clients import Client
-import src.Func.Funcionalidades as Func
+from src.Classes.Clients import Client, Client_Black, Client_Gold
+import src.Func.Funcionalidades as func
 
 Clients = []
 
@@ -10,14 +10,13 @@ def main():
     c1 = Bank_Account(Robson,10000, 7000, 453352, 1000)
     c2 = Bank_Account(Carlos, 2000, 800, 123456, 900)
 
-    Clients.append(Robson)
-    Clients.append(Carlos)
+    Robson = Client_Gold(123321)
 
-    print(Clients)
-
-
+    print(Robson.Born_data)
+    print(Robson.Id)
+    # func.Transfer(1000,c1,c2)
+    # print(Robson)
     # Robson.Describe()
-    # c1.Description()
 
     # c1.Withdraw(2000)
 

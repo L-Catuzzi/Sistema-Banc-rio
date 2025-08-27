@@ -3,6 +3,8 @@ from src.Classes.Clients import Client, Client_Black, Client_Gold
 import src.Func.Funcionalidades as func
 
 Clients = []
+Transactions = []
+Accounts = []
 
 def main():
     Robson = Client("Robson", 32, 3522822, "19/09/1995","Bronze")
@@ -12,7 +14,9 @@ def main():
 
     Robson = Client_Gold(123321)
 
-    print(Robson.Born_data)
+    Accounts.append(c1)
+    Accounts.append(c2)
+
     print(Robson.Id)
     # func.Transfer(1000,c1,c2)
     # print(Robson)

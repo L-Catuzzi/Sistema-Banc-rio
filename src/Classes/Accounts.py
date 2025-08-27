@@ -3,14 +3,14 @@ from src.Classes.Clients import Client
 class Bank_Account():
 
     def __init__(self,Client: Client, Balance: float,Limit: float, Account_Number: int, Credit: float):
-        self.Client_name = Client
+        self.Client_name = Client.Name
         self.Balance = Balance
         self.Limit = Limit
         self.Acc_Number = Account_Number
         self.Credit = Credit
         
     def Description(self):
-        print(f"User name: {self.Client_name.Name}\nBalance: {self.Balance}\nLimit: {self.Limit}\nAccount Number: {self.Acc_Number}\nCredit: {self.Credit}")
+        print(f"User name: {self.Client_name}\nBalance: {self.Balance}\nLimit: {self.Limit}\nAccount Number: {self.Acc_Number}\nCredit: {self.Credit}")
 
     def Withdraw(self,Value):
         if Value > 0:
@@ -40,11 +40,6 @@ class Investment_Account(Bank_Account):
     def __init__(self, ):
         pass
 
-    
-    # @staticmethod
-    # def Id_generator():
-    #     rand = randint(10000,19999)
-    #     return rand
 
 
 class Transaction:

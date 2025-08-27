@@ -1,16 +1,36 @@
 Resumo projeto
 Criar um sistema bancário utilizando classes em python e conceitos de programação orientada a objeto
 
-Funcionalidades
-- Cadastrar cliente
-- Criar conta
-- Consultar saldo
-- Realizar transação
-- Remover conta
-- Remover cliente
-- Depositar dinheiro
-- Sacar dinheiro
+## Funcionalidades
+Cliente(base):
+    - Descrição do cliente v
+    - Abrir conta
+    - Deletar conta
 
+Clientes(gold):
+    - Investir
+    - Compra parcelada
+
+Clientes(black):
+    - Investir 
+    - Criar
+
+Conta: 
+    - Depositar v
+    - Sacar v
+    - checar saldo v
+    - transferir v
+    - Contas premium
+
+Funcionário:
+    - Checar dados do cliente 
+    - Checar dados da conta 
+    - Promover conta 
+    - Listar transações 
+
+Utilidades:
+    - Encontrar cliente 
+    - Encontrar conta
 
 Testes
 - Buscar cliente que não existe

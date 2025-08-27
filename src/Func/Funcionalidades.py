@@ -19,18 +19,19 @@ def find_account(Account_id, Accounts: list[Bank_Account]) -> Bank_Account:
         else:
             print("Account doesnt exist")
 
-def Transfer(Quantity, Sender : Bank_Account, Receiver: Bank_Account):
+def Transfer(Quantity, Sender : Bank_Account, Receiver: Bank_Account, Transactions: list[Transaction]):
     if Quantity > 0 and Sender.Balance >= Quantity:
         Sender.Balance -= Quantity
         Receiver.Balance += Quantity
+        t1 = Transaction(Quantity, Sender.Acc_Number, Receiver.Acc_Number)
+        Transactions.append(t1)
         print("Transaction concluded")
     elif Quantity <= 0:
         print("Invalid Value")
     else:
         print("Insuficient balance")
     
-def Create_account() -> Bank_Account:
-    pass
+
 
 
 def List_transactions(Transactions: list[Transaction]):

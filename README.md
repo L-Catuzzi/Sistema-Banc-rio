@@ -4,28 +4,26 @@ Criar um sistema bancário utilizando classes em python e conceitos de programa�
 ## Funcionalidades
 Cliente(base):
     - Descrição do cliente v
-    - Abrir conta
-    - Deletar conta
 
 Clientes(gold):
-    - Investir
-    - Compra parcelada
+    - Compra Crédito
 
 Clientes(black):
     - Investir 
-    - Criar
 
 Conta: 
     - Depositar v
     - Sacar v
     - checar saldo v
     - transferir v
-    - Contas premium
 
 Funcionário:
-    - Checar dados do cliente 
-    - Checar dados da conta 
-    - Promover conta 
+    - Checar dados do cliente v
+    - Checar dados da conta v
+    - Promover conta  v
+    - Deletar conta
+    - Deletar Cliente
+    - Criar conta
     - Listar transações 
 
 Utilidades:

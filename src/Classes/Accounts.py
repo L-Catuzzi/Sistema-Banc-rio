@@ -9,8 +9,8 @@ class Bank_Account():
         self.Acc_Number = Account_Number
         self.Credit = Credit
         
-    def Description(self):
-        print(f"User name: {self.Client_name}\nBalance: {self.Balance}\nLimit: {self.Limit}\nAccount Number: {self.Acc_Number}\nCredit: {self.Credit}")
+    def __str__(self):
+        return(f"User name: {self.Client_name}\nBalance: {self.Balance}\nLimit: {self.Limit}\nAccount Number: {self.Acc_Number}\nCredit: {self.Credit}")
 
     def Withdraw(self,Value):
         if Value > 0:
@@ -42,7 +42,9 @@ class Investment_Account(Bank_Account):
 
 
 
-class Transaction:
+
+class Transaction():
+
     def __init__(self,Quantity,Sender_id, Receiver_id):
         self.Quantity = Quantity
         self.Sender = Sender_id

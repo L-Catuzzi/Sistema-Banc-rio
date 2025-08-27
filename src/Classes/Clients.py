@@ -1,4 +1,4 @@
-from src.Classes.Accounts import Bank_Account
+
 # Cadastro do cliente
 class Client:
     number= 123
@@ -25,12 +25,6 @@ class Client_Gold(Client):
     def __init__(self, Gold_id):
         self.Id = Gold_id
     
-    def Buy_credit(self, Value, Account: Bank_Account):
-        pass
-
 class Client_Black(Client):
     def __init__(self, Black_id):
         self.Id = Black_id
-
-    def Invest(self, Account: Bank_Account, Value):
-        pass

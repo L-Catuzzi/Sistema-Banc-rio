@@ -1,14 +1,14 @@
 # Some useful functions
 from src.Classes.Clients import Client
-from src.Classes.Accounts import Bank_Account,Transaction
+from src.Classes.Accounts import Bank_Account
+from src.Classes.Transaction import Transaction
 
 
 def find_client(client_id, Client_list: list[Client]):
     for client in Client_list:
         if client.CPF == client_id:
             return client
-        else:
-            return "Client not found"
+    print("Client doesnt exist")
         
 
 def find_account(Account_id, Accounts: list[Bank_Account]) -> Bank_Account:
@@ -16,8 +16,8 @@ def find_account(Account_id, Accounts: list[Bank_Account]) -> Bank_Account:
     for Account in Accounts:
         if Account.Acc_Number == Account_id:
             return Account
-        else:
-            print("Account doesnt exist")
+        
+    print("Account doesnt exist")
 
 def Transfer(Quantity, Sender : Bank_Account, Receiver: Bank_Account, Transactions: list[Transaction]):
     if Quantity > 0 and Sender.Balance >= Quantity:

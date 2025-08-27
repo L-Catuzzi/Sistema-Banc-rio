@@ -26,6 +26,7 @@ class Bank_Account():
     def Deposit(self, Value):
         if Value >= 0:
             self.Balance += Value
+            print(f"Deposit of {Value} succeful")
         else:
             print("Invalid Value")
     
@@ -43,9 +44,3 @@ class Investment_Account(Bank_Account):
 
 
 
-class Transaction():
-
-    def __init__(self,Quantity,Sender_id, Receiver_id):
-        self.Quantity = Quantity
-        self.Sender = Sender_id
-        self.Receiver = Receiver_id

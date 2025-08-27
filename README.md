@@ -21,21 +21,20 @@ Funcionário:
     - Checar dados do cliente v
     - Checar dados da conta v
     - Promover conta  v
-    - Deletar conta
-    - Deletar Cliente
-    - Criar conta
-    - Listar transações 
+    - Deletar conta v 
+    - Deletar Cliente v
+    - Criar conta v
+    - Listar transações v
 
 Utilidades:
-    - Encontrar cliente 
-    - Encontrar conta
+    - Encontrar cliente v
+    - Encontrar conta v
 
 Testes
 - Buscar cliente que não existe
 - Transação sem saldo
 - Solicitar crédito
-
-Resultados
+- Busca de Valores inválidos
 
 
 Atualizações futuras
